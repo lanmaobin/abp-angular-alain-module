@@ -1,0 +1,13 @@
+<page-header>
+  <ng-template #action>
+    <button (click)="add()" nz-button nzType="primary">新建</button>
+  </ng-template>
+</page-header>
+
+<nz-upload
+[nzCustomRequest]="tusUpload"
+    nzAction="http://localhost:21021/files">
+    <button nz-button>
+      <i nz-icon type="upload"></i><span>Click to Upload</span>
+    </button>
+  </nz-upload>
